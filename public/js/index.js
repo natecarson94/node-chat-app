@@ -6,11 +6,6 @@ const socket = io();
     socket.on('newMessage',function(newMessage){
         console.log('newMessage',newMessage);
     });
-
-    socket.emit('createMessage',{
-        from: 'otherme@example.com',
-        text: 'I just sent everyone a message'
-    });
     
    });
 
